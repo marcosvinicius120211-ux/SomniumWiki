@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somnium Wiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">☾</span>
+                <span>SOMNIUM</span>
+                <small>WIKI</small>
+            </a>
+
+            <button class="menu-button" id="menuButton" aria-label="Abrir menu">☰</button>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="#inicio">Início</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#npcs">NPCs</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#personagens">Personagens</a>
+                <a href="#creditos">Créditos</a>
+            </nav>
+
+            <div class="search-box">
+                <input id="searchInput" type="search" placeholder="Pesquisar na Wiki..." autocomplete="off">
+                <button id="searchButton" aria-label="Pesquisar">⌕</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <p class="eyebrow">WIKI</p>
+                <h1>somnium</h1>
+                <p>
+                    Uma wiki criada para reunir informações sobre a lore do jogo, a aldeia,
+                    seus habitantes, habilidades e os misteriosos quartos encontrados
+                    durante a fuga.
+                </p>
+                <a class="pixel-button" href="#conteudo">EXPLORAR A WIKI</a>
+            </div>
+        </section>
+
+        <div class="layout" id="conteudo">
+            <aside class="sidebar">
+                <div class="side-card">
+                    <h2>Navegação</h2>
+                    <a href="#inicio">Página inicial</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#npcs">NPCs</a>
+                    <a href="#rooms">Rooms</a>
+                    <a href="#personagens">Personagens</a>
+                    <a href="#creditos">Créditos</a>
+                </div>
+
+                <div class="side-card status-card">
+                    <h2>Witch's Nightmare</h2>
+                    <p><strong>Tipo:</strong> RPG </p>
+                    <p><strong>Objetivo:</strong> Fugir da aldeia</p>
+                    <p><strong>Estado:</strong> Em desenvolvimento</p>
+                </div>
+            </aside>
+
+            <section class="content">
+                <div class="notice">
+                    <strong>⚠ AVISO:</strong>
+                    Esta wiki está em construção. Algumas informações são provisórias
+                    e podem mudar durante o desenvolvimento do jogo.
+                </div>
+
+                <section class="wiki-section" id="habilidades" data-search="habilidades magia feitiços">
+                    <div class="section-title">
+                        <span class="pixel-icon">✦</span>
+                        <div>
+                            <p class="section-label">GAMEPLAY</p>
+                            <h2>Habilidades</h2>
+                        </div>
+                    </div>
+
+                    <p>
+                        As habilidades representam os poderes que a bruxa pode utilizar
+                        para atravessar a aldeia, escapar de perigos e encontrar novas
+                        rotas. Cada habilidade pode ter diferentes níveis de domínio.
+                    </p>
+
+                    <div class="card-grid">
+                        <article class="wiki-card">
+                            <span class="tag magic">MAGIA</span>
+                            <h3>Feitiço de Sombra</h3>
+                            <p>Permite ocultar a presença da bruxa por alguns instantes.</p>
+                        </article>
+                        <article class="wiki-card">
+                            <span class="tag utility">UTILIDADE</span>
+                            <h3>Passo Etéreo</h3>
+                            <p>Um deslocamento curto usado para atravessar espaços perigosos.</p>
+                        </article>
+                        <article class="wiki-card">
+                            <span class="tag defense">DEFESA</span>
+                            <h3>Barreira Arcana</h3>
+                            <p>Cria uma proteção temporária contra determinados ataques.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="wiki-section" id="npcs" data-search="npcs aldeões personagens habitantes inimigos">
+                    <div class="section-title">
+                        <span class="pixel-icon">♟</span>
+                        <div>
+                            <p class="section-label">ALDEIA</p>
+                            <h2>NPCs</h2>
+                        </div>
+                    </div>
+
+                    <p>
+                        Os NPCs são os habitantes da aldeia. Alguns podem ajudar,
+                        enquanto outros podem dificultar a fuga da bruxa.
+                    </p>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>NPC</th>
+                                    <th>Função</th>
+                                    <th>Comportamento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ferreiro</td>
+                                    <td>Comerciante</td>
+                                    <td>Trabalha durante o dia</td>
+                                </tr>
+                                <tr>
+                                    <td>Curandeira</td>
+                                    <td>Suporte</td>
+                                    <td>Pode fornecer informações</td>
+                                </tr>
+                                <tr>
+                                    <td>Guarda da Aldeia</td>
+                                    <td>Obstáculo</td>
+                                    <td>Investiga movimentos suspeitos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="wiki-section" id="rooms" data-search="rooms salas locais mapa exploração">
+                    <div class="section-title">
+                        <span class="pixel-icon">▣</span>
+                        <div>
+                            <p class="section-label">EXPLORAÇÃO</p>
+                            <h2>Rooms</h2>
+                        </div>
+                    </div>
+
+                    <p>
+                        As Rooms são áreas individuais encontradas durante a exploração.
+                        Elas podem conter itens, personagens, enigmas ou caminhos secretos.
+                    </p>
+
+                    <div class="room-list">
+                        <article class="room-card">
+                            <div class="room-number">01</div>
+                            <div>
+                                <h3>Casa Abandonada</h3>
+                                <p>Uma construção antiga que pode esconder pistas sobre a aldeia.</p>
+                            </div>
+                        </article>
+                        <article class="room-card">
+                            <div class="room-number">02</div>
+                            <div>
+                                <h3>Praça Central</h3>
+                                <p>Uma das áreas mais movimentadas da aldeia. Evite chamar atenção.</p>
+                            </div>
+                        </article>
+                        <article class="room-card">
+                            <div class="room-number">03</div>
+                            <div>
+                                <h3>Floresta</h3>
+                                <p>Uma possível rota de fuga cercada por árvores e Easter eggs (eu sei q vc vai procurar Xavier).</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="wiki-section" id="personagens" data-search="personagens bruxa protagonista">
+                    <div class="section-title">
+                        <span class="pixel-icon">♜</span>
+                        <div>
+                            <p class="section-label">LORE</p>
+                            <h2>Personagens</h2>
+                        </div>
+                    </div>
+
+                    <div class="character-card">
+                        <div class="character-avatar">O</div>
+                        <div>
+                            <span class="tag magic">PROTAGONISTA</span>
+                            <h3>Orata</h3>
+                            <p>
+                                A protagonista de somnium. Depois de ser descoberta
+                                pela aldeia, ela precisa encontrar uma maneira de escapar
+                                antes que os habitantes consigam cercá-la.
+                            </p>
+                            <p class="muted">
+                                <strong>Informações:</strong> <p/>nome: Orata <p/>origem: São Gonçalo <p/> data de nascimento: 17/08/19XX
+                             <p/> dados a mais podem ser adicionados conforme o desenvolvimento do jogo.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="wiki-section" id="creditos" data-search="créditos desenvolvedores equipe">
+                    <div class="section-title">
+                        <span class="pixel-icon">★</span>
+                        <div>
+                            <p class="section-label">WIKI</p>
+                            <h2>INFO</h2>
+                        </div>
+                    </div>
+
+                    <p>
+                        Esta página foi criada como a central de informações de
+                        <strong>somnium</strong>.
+                    </p>
+
+                    <div class="credits">
+                        <div>
+                            <span>PROJETO</span>
+                            <strong>somnium</strong>
+                        </div>
+                        <div>
+                            <span>DESENVOLVIMENTO</span>
+                            <strong>Marcos Vinicius</strong>
+                        </div>
+                        <div>
+                            <span>FONTES DE PESQUISA</span>
+                            <strong>Will Dev, Front-end para iniciantes, e Larissa Kich</strong>
+                        </div>
+                    </div>
+                </section>
+
+                <div id="noResults" class="no-results" hidden>
+                    <h2>Nenhum resultado encontrado</h2>
+                    <p>Tente pesquisar outro termo.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>somnium Wiki — Projeto independente</p>
+        <p class="muted">Will Dev agradeço pelos seus vídeos :).</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
